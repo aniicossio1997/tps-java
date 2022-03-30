@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+/home/ana/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1229361410.index
+3771768277.index
+1870053899.index
+1940152058.index
