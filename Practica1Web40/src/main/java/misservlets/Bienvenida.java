@@ -38,9 +38,23 @@ public class Bienvenida extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		// TODO Auto-generated method stub
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 //		doGet(request, response);
-//	}
+//        PrintWriter out = response.getWriter();
+		PrintWriter salida=response.getWriter();
+		//genero respuesta
+		salida.println("<h1>Welcom</h1>");
+		salida.println("<html>");
+		salida.println("<head></head>");         
+		salida.println("<body>");
+
+		salida.println("Usuario:");
+		String name=request.getParameter("name");
+		salida.println("<h1>"+name+"</h1>");
+    
+		salida.println("</body>");
+		salida.println("</html>");  
+	}
 
 }
